@@ -62,19 +62,26 @@
                     </li>
                     <li>
                         <label for="opdrachtomschrijving">Opdrachtomschrijving</label>
-                        <input type="text" id="opdrachtomschrijving">
+                        <br>
+                        <textarea id="opdrachtomschrijving" rows="10" cols="50" placeholder="Wat houdt de opdracht in?"></textarea>
                     </li>
                     <li>
                         <label for="doelgroepomschrijving">Doelgroepomschrijving</label>
-                        <input type="text" id="doelgroepomschrijving">
+                        <br>
+                        <textarea id="doelgroepomschrijving" rows="10" cols="50" placeholder="Wie is de doelgroep?"></textarea>
                     </li>
                     <li>
                         <label for="doelstelling">Doelstelling</label>
-                        <input type="text" id="doelstelling">
+                        <br>
+                        <textarea id="doelstelling" rows="10" cols="50"></textarea>
                     </li>
                     <li>
-                        <label for="looptijd">Looptijd
-                        <input type="number" id="looptijd">weken</label>
+                        <label for="looptijd">Looptijd van
+                        <input type="date" id="looptijd"></label>
+                        <label for="looptijdtot">tot</label>
+                        <input type="date" id="looptijdtot">
+
+
                     </li>
                     <li>
                         <label for="deadline">Deadline</label>
@@ -99,7 +106,7 @@
                     <label for="onbekend">Onbekend</label>
 
                 <p>Opmerkingen <br>
-                <textarea id="textarea1"></textarea></p>
+                <textarea id="textarea1" rows="5" cols="50" placeholder="Heb je een opmerking?"></textarea></p>
             </fieldset>
         </form>
 
@@ -132,7 +139,7 @@
                     <input type="date" id="datum">
 
                 <p>Beschrijving werkzaamheden:<br>
-                    <textarea id="textarea"></textarea></p>
+                    <textarea id="textarea" rows="10" cols="50" placeholder="Wat houdt de stage in?"></textarea></p>
 
                 <p>Beschrijving stage</p>
                 <ol>
@@ -163,9 +170,10 @@
                 </ol>
 
                 <p>Opmerkingen <br>
-                <textarea id="textarea2"></textarea></p>
+                <textarea id="textarea2" rows="5" cols="50" placeholder="Heb je een opmerking?"></textarea></p>
 
             </fieldset>
+            <input id="submit" type="submit" value="Verstuur formulier">
         </form>
 </body>
 </html>
