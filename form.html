@@ -20,33 +20,42 @@
 
         <form>
             <fieldset>
-                <legend>Contactgegevens:</legend>
-                <label for="naam">Naam</label>
-                <input type="text" id="naam">
-                <br>
-                <label for="bedrijf">Bedrijf</label>
-                <input type="text" id="bedrijf">
-                <br>
-                <label for="adres">Adres</label>
-                <input type="text" id="adres">
-                <br>
-                <label for="postcode">Postcode</label>
-                <input type="text" id="postcode">
-                <br>
-                <label for="plaats">Plaats</label>
-                <input type="text" id="plaats">
-                <br>
-                <label for="telefoon">Telefoon</label>
-                <input type="tel" id="telefoon">
-                <br>
-                <label for="email">E-mail</label>
-                <input type="email" id="email">
-                <br>
+               <legend>Contactgegevens:</legend>
+                <ul>
+                    <li>
+
+                        <label for="naam">Naam</label>
+                        <input type="text" id="naam">
+                    </li>
+                    <li>
+                        <label for="bedrijf">Bedrijf</label>
+                        <input type="text" id="bedrijf">
+                    </li>
+                    <li>
+                        <label for="adres">Adres</label>
+                        <input type="text" id="adres">
+                    </li>
+                    <li>
+                        <label for="postcode">Postcode</label>
+                        <input type="text" id="postcode">
+                    </li>
+                    <li>
+                        <label for="plaats">Plaats</label>
+                        <input type="text" id="plaats">
+                    </li>
+                    <li>
+                        <label for="telefoon">Telefoon</label>
+                        <input type="tel" id="telefoon">
+                    </li>
+                    <li>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
+                    </li>
+                </ul>
 
                 <p>Ik wil mij aanmelden:</p>
                 <input type="radio" name="keuze" value="project" id="project">
                 <label for="project">Voor een project</label>
-                <br>
                 <input type="radio" name="keuze" value="bedrijf" id="stage">
                 <label for="stage">Als stagebedrijf</label>
             </fieldset>
@@ -62,26 +71,21 @@
                     </li>
                     <li>
                         <label for="opdrachtomschrijving">Opdrachtomschrijving</label>
-                        <br>
                         <textarea id="opdrachtomschrijving" rows="10" cols="50" placeholder="Wat houdt de opdracht in?"></textarea>
                     </li>
                     <li>
                         <label for="doelgroepomschrijving">Doelgroepomschrijving</label>
-                        <br>
                         <textarea id="doelgroepomschrijving" rows="10" cols="50" placeholder="Wie is de doelgroep?"></textarea>
                     </li>
                     <li>
                         <label for="doelstelling">Doelstelling</label>
-                        <br>
-                        <textarea id="doelstelling" rows="10" cols="50"></textarea>
+                        <textarea id="doelstelling" rows="10" cols="50" placeholder="Wat is de doelstelling?"></textarea>
                     </li>
                     <li>
                         <label for="looptijd">Looptijd van
                         <input type="date" id="looptijd"></label>
                         <label for="looptijdtot">tot</label>
                         <input type="date" id="looptijdtot">
-
-
                     </li>
                     <li>
                         <label for="deadline">Deadline</label>
@@ -90,20 +94,14 @@
                 </ol>
 
                     <p>Geschikt voor:</p>
-                    <input type="checkbox" name="geschikt" value="eerstejaars" id="eerste">
-                    <label for="eerste">Eerstejaars studenten</label>
-                    <br>
-                    <input type="checkbox" name="geschikt" value="tweedejaars" id="tweede">
-                    <label for="tweede">Tweedejaars studenten</label>
-                    <br>
-                    <input type="checkbox" name="geschikt" value="derdejaars" id="derde">
-                    <label for="derde">Derdejaars studenten</label>
-                    <br>
-                    <input type="checkbox" name="geschikt" value="afstudeerder" id="afstud">
-                    <label for="afstud">Afstudeer studenten</label>
-                    <br>
-                    <input type="checkbox" name="geschikt" value="onbekend" id="onbekend">
-                    <label for="onbekend">Onbekend</label>
+                    <select>
+                        <option value="eerstejaarsstudenten">Eerstejaars studenten</option>
+                        <option value="tweedejaarsstudenten">Tweedejaars Studenten</option>
+                        <option value="derdejaarsstudenten">Derdejaars Studenten</option>
+                        <option value="afstudeerstudenten">Afstudeer studenten</option>
+                        <option value="onbekend">Onbekend</option>
+                    </select>
+
 
                 <p>Opmerkingen <br>
                 <textarea id="textarea1" rows="5" cols="50" placeholder="Heb je een opmerking?"></textarea></p>
@@ -113,33 +111,24 @@
         <form>
             <fieldset>
                 <legend>Stage</legend>
-                <ol>
-                    <li>
-                        <input type="checkbox" name="geschiktvoor" value="tweedejaars" id="twee">
-                        <label for="twee">Tweedejaars studenten</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="geschiktvoor" value="afstudeer" id="af">
-                        <label for="af">Afstudeer studenten</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="geschiktvoor" value="onbekend" id="onbk">
-                        <label for="onbk">Onbekend</label>
-                    </li>
-                </ol>
+                <select>
+                    <option value="tweedejaarsstudenten">Tweedejaars Studenten</option>
+                    <option value="derdejaarsstudenten">Derdejaars Studenten</option>
+                    <option value="afstudeerstudenten">Afstudeer studenten</option>
+                    <option value="onbekend">Onbekend</option>
+                </select>
+
 
                 <p>Hoe lang is de stage?</p>
                     <input type="radio" name="weken" value="10weken" id="tien">
                     <label for="tien">10 weken</label>
-                    <br>
                     <input type="radio" name="weken" value="20weken" id="twintig">
                     <label for="twintig">20 weken</label>
-                    <br>
                     <label for="datum">Begin Datum</label>
                     <input type="date" id="datum">
 
                 <p>Beschrijving werkzaamheden:<br>
-                    <textarea id="textarea" rows="10" cols="50" placeholder="Wat houdt de stage in?"></textarea></p>
+                    <textarea id="textarea" rows="10" cols="50"></textarea></p>
 
                 <p>Beschrijving stage</p>
                 <ol>
@@ -173,7 +162,6 @@
                 <textarea id="textarea2" rows="5" cols="50" placeholder="Heb je een opmerking?"></textarea></p>
 
             </fieldset>
-            <input id="submit" type="submit" value="Verstuur formulier">
         </form>
 </body>
 </html>
